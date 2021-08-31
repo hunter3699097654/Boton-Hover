@@ -1,0 +1,106 @@
+body {
+    background-color: aqua;
+}
+
+
+.uno {
+    background-color: darkblue;
+    color: orangered;
+    right: 50px;
+    margin: 50px;
+    left: 50px;
+    top: 50px;
+    box-shadow: center;
+    height: auto;
+    border-radius: 50px;
+    display: flex;
+    
+}
+
+.img  {
+    right: 100px;
+    margin: 100px;
+    left: 100px;
+    top: 100px;
+    bottom: 100px;
+    opacity: 3;
+    transition: 2s;
+    transition-delay: 2s;
+    transition-duration: 2s;
+    
+}
+
+.div-responsive {
+    background: #c95;
+
+@media screen and (min-width: 400px) AND (max-width: 650px) {
+    .div-responsive {
+        background: red;
+    }
+}
+
+
+@media screen and (min-width: 650px) AND (max-width: 800px) {
+    .div-responsive {
+        background: green;
+    }
+}
+
+
+@media screen and (min-width: 800px) AND (max-width: 1.200px) {
+    .div-responsive {
+        background: orange;
+    }
+}
+
+
+@media screen and (min-width: 1.200px) {
+    .div-responsive {
+        background: black;
+    }
+}
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap");
+
+body  {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #191919;
+    font-family: "Cinzel-Decorative", cursive;
+}
+
+.pulse {
+    stroke-dasharray: 1840;
+    stroke-dashoffset: 3680;
+    animation: dash 2s ease-out infinite;
+    stroke: url(#strokeGradient);
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+span {
+    color: #eee;
+    display: block;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 15px;
+    animation: blink 900ms linear infinite alternate;
+}
+
+@keyframes blink {
+    form {
+        opacity: 0;
+    }
+
+     to {
+         opacity: 1;
+  }
+}
